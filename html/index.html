@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="../image/f61b5f54.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="bg-black">
+    <div class="container  d-flex justify-content-center py-5 ">
+        <div class="ring">
+            <i></i>
+            <i></i>
+            <i></i>
+            <div class="login welcome-msg" onsubmit="onload()">
+                <h2 class="text-info">Login</h2>
+                <div class="inputBx">
+                    <input type="text" id="signEmail" placeholder="Your Email">
+                </div>
+                <div class="inputBx">
+                    <input type="password" id="signPass" placeholder="Password">
+                </div>
+                <div id="result-sign">
+                    <span></span>
+                </div>
+                <div class="inputBx">
+                    <input type="submit" value="Sign in" id="submit" onclick="searchUser()">
+                </div>
+                <div class="links">
+                    <p class="text-white">Don’t have an account?</p>
+                    <a href="sign-up.html">Signup</a>
+                </div>
+                <script src="../js/bootstrap.bundle.min.js"></script>
+                <script src="../js/script.js"></script>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

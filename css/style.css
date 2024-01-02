@@ -3,6 +3,38 @@
   --green: rgba(6, 248, 0);
   --yellow: rgb(255, 251, 0);
 }
+body {
+  overflow: hidden;
+}
+
+@keyframes fall {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, 100%) rotate(360deg);
+  }
+}
+
+@for $i from 1 through 50 {
+  $random-x: random(100);
+  $random-duration: random(10) + s;
+  $random-size: random(5) + px;
+
+  .snowflake:nth-child(#{$i}) {
+    position: absolute;
+    top: -10%;
+    left: #{$random-x}%;
+    animation: fall #{$random-duration} linear infinite;
+  }
+
+  .snowflake:nth-child(#{$i}) svg {
+    width: #{$random-size};
+    height: #{$random-size};
+    fill: #fff;
+    opacity: 0.5;
+  }
+}
 /* *------------------------------Input Animation------------------------------*/
 .ring {
   position: relative;
@@ -132,3 +164,33 @@
 }
 
 
+#snowflakeContainer {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.snowflake {
+  padding-left: 15px;
+  font-family: Cambria, Georgia, serif;
+  font-size: 14px;
+  line-height: 24px;
+  position: fixed;
+  color: #ffffff;
+  user-select: none;
+  z-index: 1000;
+}
+.snowflake:hover {
+  cursor: default;
+}
+h1 {
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ff3300;
+  padding: 15px;
+  color: #fff;
+  margin: 0px;
+}
+li {
+  margin-bottom: 24px;
+  padding-left: 10px;
+}

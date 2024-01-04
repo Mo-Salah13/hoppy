@@ -162,34 +162,3 @@ body {
   background-clip: text;
   color: transparent;
 }
-
-#snowflakeContainer {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-.snowflake {
-  padding-left: 15px;
-  font-family: Cambria, Georgia, serif;
-  font-size: 14px;
-  line-height: 24px;
-  position: fixed;
-  color: #ffffff;
-  user-select: none;
-  z-index: 1000;
-}
-.snowflake:hover {
-  cursor: default;
-}
-h1 {
-  font-size: 32px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #ff3300;
-  padding: 15px;
-  color: #fff;
-  margin: 0px;
-}
-li {
-  margin-bottom: 24px;
-  padding-left: 10px;
-}
